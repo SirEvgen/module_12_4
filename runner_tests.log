@@ -1,0 +1,16 @@
+2024-11-22 19:34:56,146 | ERROR | Имя может быть только строкой, передано int
+2024-11-22 19:34:56,147 | ERROR | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\JetBrains\PyCharm2024.2\projects\Testing_Git\Тестирование\tests_12_4.py", line 21, in test_run
+    self.runner = Runner(333, 5)
+  File "C:\Users\User\AppData\Local\JetBrains\PyCharm2024.2\projects\Testing_Git\Тестирование\runner_and_tournament.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2024-11-22 19:34:56,150 | ERROR | Скорость не может быть отрицательной, сейчас -5
+2024-11-22 19:34:56,150 | ERROR | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\JetBrains\PyCharm2024.2\projects\Testing_Git\Тестирование\tests_12_4.py", line 11, in test_walk
+    runner = Runner('2222', -5)
+  File "C:\Users\User\AppData\Local\JetBrains\PyCharm2024.2\projects\Testing_Git\Тестирование\runner_and_tournament.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
